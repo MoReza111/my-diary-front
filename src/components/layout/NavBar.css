@@ -1,0 +1,38 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding:1.5em;
+}
+
+.nav .logo{
+    font-size: 1.5rem;
+}
+
+.nav .logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.saerch button,
+.saerch input{
+    background-color: #fff;
+    height: 2em;
+    border: 0;
+    font-size: 1rem;
+}
+
+.saerch input{
+    width: 300px;
+    padding: 10px;
+}
+
+.saerch input:focus{
+    width:280px;
+}
+
+.saerch button{
+    width:20px;
+    cursor: pointer;
+}

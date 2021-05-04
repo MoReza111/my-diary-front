@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input:focus,
+button:focus{
+    outline: 0;
+}
+
+.container{
+    width:90%;
+    margin: 10px auto;
+}
+
+body{
+    direction: rtl;
+}
