@@ -1,6 +1,7 @@
 .card{
     width:40%;
     background-color:darkgray;
+    margin-top: 2em;
 }
 
 .card-header,

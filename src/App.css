@@ -11,7 +11,9 @@ button:focus{
 
 .container{
     width:90%;
+    height:1vh;
     margin: 10px auto;
+    position: relative;
 }
 
 body{
