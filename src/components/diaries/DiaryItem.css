@@ -1,0 +1,31 @@
+.card{
+    width:40%;
+    background-color:darkgray;
+}
+
+.card-header,
+.card-content,
+.card-footer{
+    padding:1em;
+    color: #fff;
+    font-size:1.1rem;
+}
+
+.card-header{
+    font-size:1.5rem;
+}
+
+.card-content{
+    border-bottom: #fff 1px solid;
+    border-top:#fff 1px solid ;
+    text-align: justify;
+}
+
+.card-footer{
+    text-align: left;
+}
+
+.card-footer a{
+    color:#fff;
+    text-decoration: none;
+}

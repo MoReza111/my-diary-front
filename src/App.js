@@ -1,12 +1,18 @@
+import { Fragment } from 'react'
 import './App.css'
 
 import NavBar from './components/layout/NavBar'
 
+import Diaries from './components/diaries/Diaries'
+
 const App = ()=> {
   return (
-    <div className="container">
+    <Fragment>
       <NavBar />
-    </div>
+      <div className="container">
+        <Diaries />
+      </div>
+    </Fragment>
   )
 }
 
