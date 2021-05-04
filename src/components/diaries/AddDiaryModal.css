@@ -70,10 +70,11 @@
 }
 
 .btn-pry{
-    display: block;
+    display: inline-block;
     cursor: pointer;
     font-size: 0.9rem;
-    width: 50px;
+    margin-left: 2px;
+    width: 100px;
     color: #fff;
     padding: 5px;
     background-color: #26dd;

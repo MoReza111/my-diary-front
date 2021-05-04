@@ -6,13 +6,15 @@ import AddBtn from './components/layout/AddBtn'
 
 import Diaries from './components/diaries/Diaries'
 import AddDiaryModal from './components/diaries/AddDiaryModal'
+import DiaryModal from './components/diaries/DiaryModal'
 
 const App = ()=> {
   return (
     <Fragment>
       <NavBar />
       <div className="container">
-        <AddDiaryModal />
+        {/* <AddDiaryModal /> */}
+        <DiaryModal />
         <Diaries />
         <AddBtn />
       </div>
