@@ -1,21 +1,27 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 import './DiaryItem.css'
+import { setCurrent , setShowDiary } from './../../actions/diaryActions'
 
-const DiaryItem = () => {
+const DiaryItem = ({diary,setCurrent,setShowDiary}) => {
+    const summary = diary.content.replace(/(([^\s]+\s\s*){20})(.*)/,"$1…")
     return (
         <div className="card">
             <div className="card-header">
-                <p>دورهمی دوستانه</p>
+                <p>{diary.topic}</p>
             </div>
             <div className="card-content">
-                <p>لورم ایپسوم یا طرح‌نما  به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود.</p>
+                <p>{summary}</p>
             </div>
             <div className="card-footer">
-                <a href="/">ادامه مطلب</a>
+                <a href="/#" onClick={()=>{
+                    setCurrent(diary)
+                    setShowDiary()
+                    }}>ادامه مطلب</a>
             </div>            
         </div>
     )
 }
 
-export default DiaryItem
+export default connect(null,{setCurrent,setShowDiary})(DiaryItem)

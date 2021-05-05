@@ -1,15 +1,28 @@
-.fixed-btn{
+.btn{
     position: fixed;
     right:30px;
     bottom:30px;
     z-index: 10;
-}
-
-.btn{
-    width:25px;
-    height:25px;
+    width:75px;
+    height:75px;
     background-color: #c4c4c4;
-    padding:20px;
+    padding:10px;
     border-radius: 50%;
     color: #fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn i{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:500px){
+    .btn{
+        width:50px;
+        height:50px;
+    }
 }

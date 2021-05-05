@@ -1,15 +1,15 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 import './AddBtn.css'
+import { setShowAddDiary } from './../../actions/diaryActions'
 
-const AddBtn = () => {
+const AddBtn = ({setShowAddDiary}) => {
     return (
-        <div className="fixed-btn">
-            <a href="/#add-diary-modal" className="btn modal-trigger">
+            <a href="/#add-diary-modal" className="btn modal-trigger" onClick={setShowAddDiary}>
                 <i className="fas fa-plus"></i>
             </a>
-        </div>
     )
 }
 
-export default AddBtn
+export default connect(null,{setShowAddDiary})(AddBtn)

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #f3bda1;
     padding:1.5em;
 }
 
@@ -12,7 +12,8 @@
 
 .nav .logo a{
     text-decoration: none;
-    color: #fff;
+    color: #333;
+    font-weight: bold;
 }
 
 .saerch button,
@@ -21,18 +22,26 @@
     height: 2em;
     border: 0;
     font-size: 1rem;
+    font-family: inherit;
 }
 
 .saerch input{
-    width: 300px;
-    padding: 10px;
-}
-
-.saerch input:focus{
-    width:280px;
+    width: 280px;
+    padding: 12px;
 }
 
 .saerch button{
     width:20px;
     cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .nav{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .saerch input{
+        width: 200px;
+    }
 }

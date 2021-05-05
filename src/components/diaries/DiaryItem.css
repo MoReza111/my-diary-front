@@ -1,6 +1,14 @@
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .card{
     width:40%;
-    background-color:darkgray;
+    height: 300px;
+    background-color:#687980;
     margin-top: 2em;
 }
 
@@ -14,19 +22,41 @@
 
 .card-header{
     font-size:1.5rem;
+    height:30%;
 }
 
 .card-content{
     border-bottom: #fff 1px solid;
     border-top:#fff 1px solid ;
     text-align: justify;
+    height: 50%;
 }
 
 .card-footer{
     text-align: left;
+    height: 10%;
 }
 
 .card-footer a{
     color:#fff;
     text-decoration: none;
+}
+
+@media screen and (max-width:350px){
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width:100%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width:80%;
+    }
 }

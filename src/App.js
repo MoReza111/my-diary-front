@@ -1,4 +1,6 @@
+import { Provider } from 'react-redux'
 import { Fragment } from 'react'
+import {ToastContainer} from 'react-toastify'
 import './App.css'
 
 import NavBar from './components/layout/NavBar'
@@ -8,17 +10,22 @@ import Diaries from './components/diaries/Diaries'
 import AddDiaryModal from './components/diaries/AddDiaryModal'
 import DiaryModal from './components/diaries/DiaryModal'
 
+import store from './store'
+
 const App = ()=> {
   return (
-    <Fragment>
-      <NavBar />
-      <div className="container">
-        {/* <AddDiaryModal /> */}
-        <DiaryModal />
-        <Diaries />
-        <AddBtn />
-      </div>
-    </Fragment>
+    <Provider store={store}>
+      <Fragment>
+        <NavBar />
+        <div className="container">
+          <AddDiaryModal />
+          <DiaryModal />
+          <Diaries />
+          <AddBtn />
+        </div>
+        <ToastContainer rtl={true} />
+      </Fragment>
+    </Provider>
   )
 }
 

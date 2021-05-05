@@ -1,5 +1,6 @@
 .modal{
     height: 100%;
+    width:100%;
     position: fixed;
     left: 0;
     right: 0;
@@ -12,13 +13,15 @@
 }
 
 .modal-content{
-    width:500px;
-    background-color: #fff;
+    width:80%;
+    height: 80%;
+    background-color: #fefecc;
 }
 
 .modal-header,
 .modal-footer{
     padding: 10px;
+    height: 10%;
 }
 
 .modal-header{
@@ -41,6 +44,15 @@
     padding: 10px;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+    height: 70%;
+}
+
+.modal-body div{
+    height: 70%;
+}
+
+.modal-body div:first-child{
+    height: 20%;
 }
 
 .modal-body label,
@@ -58,6 +70,7 @@
     border: 1px solid #ddd;
     margin: 10px 0 20px 0;
     padding:20px;
+    font-family: inherit;
 }
 
 .modal-body textarea:focus{
@@ -65,7 +78,7 @@
 }
 
 .modal-body textarea{
-    min-height: 300px;
+    min-height: 90%;
     resize: none;
 }
 
@@ -77,6 +90,34 @@
     width: 100px;
     color: #fff;
     padding: 5px;
-    background-color: #26dd;
+    background-color: #333;
     border: 0;
+}
+
+.btn-pry:hover{
+    background-color:#687980;
+}
+
+@media screen and (max-width:500px){
+    .modal-content{
+        width:90%;
+        height: 90%;
+
+    }
+    .modal-content label{
+        font-size:0.9rem;
+    }
+
+    .modal-body .inputs{
+        font-size:0.9rem;
+    }
+
+    .modal-footer div{
+        display:flex;
+        align-items: center;
+        justify-content:start;
+    }
+    .modal-footer div label{
+        font-size: 0.8rem;
+    }
 }
